@@ -1,0 +1,88 @@
+.switch {
+  width: 329px;
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 33px;
+  background-color: #f8eddd;
+}
+.btnLeft {
+  padding: 10px 0px 9px 13px;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.btnRight {
+  padding: 10px 13px 9px 0px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.btnOn,
+.btnOff {
+  width: 146px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 33px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnOn {
+  background-color: #9e896a;
+  color: #ffffff;
+}
+
+.btnOff {
+  background-color: transparent;
+  color: #9e896a;
+}
+
+/* Анимация для hover */
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btnOn:hover {
+  background-color: #bfa98a;
+  animation: hoverAnimation 0.5s ease forwards; /* Добавлена анимация при наведении */
+}
+
+.btnOff:hover {
+  color: #bfa98a;
+  animation: hoverAnimation 0.5s ease forwards; /* Добавлена анимация при наведении */
+}
+
+/* Анимация для клика */
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btnOff:active {
+  background-color: #8a7a5f; /* Измените цвет на ваш выбор при клике */
+  animation: clickAnimation 0.2s ease; /* Добавлена анимация при клике */
+}

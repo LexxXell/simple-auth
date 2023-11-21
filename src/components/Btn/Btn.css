@@ -1,0 +1,48 @@
+.defaultButton {
+  background-color: #9e896a;
+  border: 0px;
+  border-radius: 36px;
+}
+
+.btnText {
+  color: white;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding: 13px 95px 12px 94px;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.defaultButton:hover {
+  background-color: #bfa98a;
+  animation: hoverAnimation 0.5s ease forwards;
+}
+
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.defaultButton:active {
+  background-color: #8a7a5f;
+  animation: clickAnimation 0.2s ease;
+}

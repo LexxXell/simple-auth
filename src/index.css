@@ -1,0 +1,29 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  display: inline-flex;
+  padding: 38px 97px 37px 41px;
+  align-items: center;
+  gap: 111px;
+}
+
+body {
+  background-color: #fffefc;
+}
+@media (max-aspect-ratio: 1) {
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #root {
+    gap: 0px !important;
+  }
+  html {
+    height: 100%;
+  }
+}

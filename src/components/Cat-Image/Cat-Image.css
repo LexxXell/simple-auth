@@ -1,0 +1,57 @@
+#image-container {
+  position: relative;
+  border-radius: 29px;
+}
+
+#catImage {
+  width: 737px;
+  height: 825px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 29px;
+}
+
+#text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 737px;
+  height: 825px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 29px;
+  background: linear-gradient(
+    180deg,
+    rgba(151, 118, 68, 0.35) 0%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+}
+
+.first-paragraph {
+  margin: 0px 0px 5px 69px;
+  width: 435px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.second-paragraph {
+  margin: 0px 0px 55px 69px;
+  width: 301px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-aspect-ratio: 1) {
+  #image-container {
+    display: none;
+  }
+}

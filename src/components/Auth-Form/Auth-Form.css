@@ -1,0 +1,123 @@
+#welcome {
+  color: black;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+#form {
+  width: 454px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome {
+  padding-bottom: 24px;
+}
+
+#switch {
+  padding-bottom: 52px;
+}
+
+#dummyText {
+  color: #5b5b5b;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding-bottom: 42px;
+}
+
+#parrent-inputUsername {
+  padding-bottom: 30px;
+}
+
+#parrent-inputRegUsername {
+  padding-bottom: 30px;
+}
+
+#parrent-inputRegEmail {
+  padding-bottom: 30px;
+}
+
+.btnsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+}
+#loginBtn {
+  margin-top: 62px;
+}
+
+#registerBtn {
+  background-color: #553e19 !important;
+  margin-top: 55px !important;
+}
+
+#frgtPass {
+  color: black;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+  cursor: pointer;
+  margin-top: 22px;
+}
+
+/* Анимация для hover */
+@keyframes hoverAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#frgtPass:hover {
+  color: rgb(112, 71, 71);
+  animation: hoverAnimation 0.5s ease forwards; /* Добавлена анимация при наведении */
+}
+
+/* Анимация для клика */
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#frgtPass:active {
+  animation: clickAnimation 0.2s ease; /* Добавлена анимация при клике */
+}
+
+@media (max-aspect-ratio: 1) {
+  #form {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .btnsContainer {
+    margin-right: 28px;
+  }
+  #dummyText {
+    padding-left: 7.75%;
+    width: 100%;
+  }
+  #switch {
+    padding-left: 7.75%;
+    width: 100%;
+  }
+}

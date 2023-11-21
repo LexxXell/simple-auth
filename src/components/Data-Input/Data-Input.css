@@ -1,0 +1,83 @@
+.inputField {
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border: 1px solid #9e896a;
+  font-size: 15px;
+  color: #9e896a;
+  width: 435px;
+  height: 54px;
+  padding-left: 31px;
+}
+
+.dataInput {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.inputName {
+  color: black;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding-bottom: 12px;
+}
+
+.inputField:focus {
+  outline: none;
+  border: 1px solid #9e896a;
+  color: #9e896a;
+}
+
+::placeholder {
+  color: #acacac;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 300;
+  word-wrap: break-word;
+  padding-left: 0px;
+}
+.hide {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='invisible 1' clip-path='url(%23clip0_754_505)'%3E%3Cg id='Group'%3E%3Cg id='Group_2'%3E%3Cg id='Group_3'%3E%3Cpath id='Vector' d='M8.86298 6.14997L11.4397 8.72665L11.4519 8.59168C11.4519 7.23789 10.3517 6.1377 8.99795 6.1377L8.86298 6.14997Z' fill='black'/%3E%3Cpath id='Vector_2' d='M8.99795 4.50103C11.2556 4.50103 13.0879 6.33335 13.0879 8.59102C13.0879 9.11863 12.9816 9.6217 12.7976 10.0839L15.1902 12.4765C16.4254 11.4458 17.3988 10.1125 18 8.59102C16.5808 5.00003 13.092 2.45605 8.99798 2.45605C7.85278 2.45605 6.75669 2.66054 5.73828 3.02864L7.50515 4.79141C7.96727 4.61146 8.47034 4.50103 8.99795 4.50103Z' fill='black'/%3E%3Cpath id='Vector_3' d='M0.817983 2.27244L2.68301 4.13747L3.05521 4.50967C1.70552 5.56488 0.638037 6.96776 0 8.59145C1.41515 12.1824 4.90798 14.7264 8.99797 14.7264C10.2659 14.7264 11.4765 14.481 12.5849 14.0352L12.9326 14.3829L15.317 16.7714L16.36 15.7326L1.86093 1.22949L0.817983 2.27244ZM5.34153 6.79188L6.60533 8.05568C6.56852 8.23156 6.54398 8.40741 6.54398 8.59145C6.54398 9.94525 7.64417 11.0454 8.99797 11.0454C9.18202 11.0454 9.3579 11.0209 9.52968 10.9841L10.7935 12.2479C10.2495 12.5178 9.64421 12.6814 8.99797 12.6814C6.7403 12.6814 4.90798 10.8491 4.90798 8.59145C4.90798 7.94525 5.07159 7.33992 5.34153 6.79188Z' fill='black'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_754_505'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  /*   background: url(https://snipp.ru/demo/495/no-view.svg); */
+}
+
+.hide.show {
+  background: url(https://snipp.ru/demo/495/view.svg);
+}
+
+.field {
+  position: relative;
+}
+
+@media (max-aspect-ratio: 1) {
+  .inputField {
+    width: 84.5% !important;
+  }
+  .field {
+    margin-left: 7.75%;
+    width: 100% !important;
+    align-items: center !important;
+  }
+  .dataInput {
+    width: 100% !important;
+    align-items: center !important;
+  }
+  .inputName {
+    width: 100%;
+    margin-left: 7.75%;
+  }
+  .hide {
+    padding-right: 20.5px;
+  }
+}
